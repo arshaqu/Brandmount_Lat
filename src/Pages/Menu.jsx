@@ -5,7 +5,7 @@ function Menu({ visible = true }) {
   const initialHeight = 150;
 
   const [size, setSize] = useState({ width: initialWidth, height: initialHeight });
-  const [position, setPosition] = useState({ top: '0rem', center: false });
+  const [position, setPosition] = useState({ top: '38rem', center: false });
   const [isStopped, setIsStopped] = useState(false);
   const [absoluteTop, setAbsoluteTop] = useState(0);
 
@@ -42,7 +42,7 @@ function Menu({ visible = true }) {
       const targetHeight = viewportHeight * 1.0;
 
       const scrollHeight = document.documentElement.scrollHeight - viewportHeight;
-      const rawScrollProgress = Math.min(window.scrollY / scrollHeight, 2);
+      const rawScrollProgress = Math.min(window.scrollY / scrollHeight, 1);
       const progress = Math.min(Math.pow(rawScrollProgress, 1.2) * 1.2, 1);
 
 
