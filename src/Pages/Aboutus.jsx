@@ -6,7 +6,7 @@ function Aboutus() {
 
   
   return (
-    <div className="bg-white h-auto text-black p-12 mt-[140vh]">
+    <div className="bg-white h-auto text-black p-12 ">
      
 
       {/* About Text */}
@@ -71,9 +71,9 @@ function Aboutus() {
 
 
       {/* Description wrapper */}
-      <div className="absolute bottom-6 left-6 w-[220px] max-w-[220px] overflow-hidden
+      <div className="absolute bottom-6 left-6 w-[220px] max-w-[180px] overflow-hidden
         transition-all duration-500 ease-in-out
-        group-hover:w-[400px] group-hover:max-w-[400px]"
+        group-hover:w-[350px] group-hover:max-w-[400px]"
       >
         <p
           className="text-sm leading-relaxed text-white
@@ -128,7 +128,7 @@ function Aboutus() {
 
 
       {/* Description wrapper */}
-      <div className="absolute bottom-6 left-6 w-[220px] max-w-[220px] overflow-hidden
+      <div className="absolute bottom-6 left-6 w-[220px] max-w-[180px] overflow-hidden
         transition-all duration-500 ease-in-out
         group-hover:w-[400px] group-hover:max-w-[400px]"
       >
@@ -182,7 +182,7 @@ function Aboutus() {
 
 
       {/* Description wrapper */}
-      <div className="absolute bottom-6 left-6 w-[220px] max-w-[220px] overflow-hidden
+      <div className="absolute bottom-6 left-6 w-[220px] max-w-[180px] overflow-hidden
         transition-all duration-500 ease-in-out
         group-hover:w-[400px] group-hover:max-w-[400px]"
       >
