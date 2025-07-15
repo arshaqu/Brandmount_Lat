@@ -38,3 +38,262 @@
 .animate-scroll-by-width {
   animation: scroll-by-width 15s linear infinite;
 }
+
+
+/* Services */
+/* General */
+.services-section {
+  padding: 60px 20px;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 20px;
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.section-subtext {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+/* Service Card */
+.service-card {
+  border: 1px solid #4d2e24;
+  background-color: #ffffff;
+  width: 300px;
+  height: 250px;
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 0 2px #4d2e24;
+}
+
+/* Content inside each card */
+.service-hover-content {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover .service-hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Elements */
+.icon-box {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 8px;
+}
+
+.service-description {
+  font-size: 13px;
+  color: #555;
+  max-width: 90%;
+  line-height: 1.4;
+}
+
+.service-number {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0.6;
+}
+
+
+.clients-title {
+  margin-top: 20px;
+}
+
+.clients-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.client-logo {
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.client-logo.active {
+  background: linear-gradient(to right, #bd66ff, #8f4dff);
+  color: white;
+  font-weight: bold;
+}
+
+.client-logo:hover {
+  transform: translateY(-3px);
+}
+
+/* OUR WORKS SECTION */
+.our-works-section {
+  display: flex;
+  flex-wrap: wrap; /* Stack on small screens */
+  margin-top: 60px;
+  gap: 40px;
+  align-items: start;
+  color: white;
+  background-color: #34160d;
+  overflow: hidden;           /* Cut overflow */
+  padding: 40px 20px;
+  height: auto;               /* Remove fixed height for responsiveness */
+  min-height: 500px;          /* Set a minimum height for larger screens */
+  box-sizing: border-box;
+}
+
+/* LEFT TEXT */
+.our-works-text {
+  flex: 1;
+  max-width: 500px;
+  min-width: 280px;
+}
+
+.our-works-text h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+.our-works-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: white;
+  text-align: left;
+}
+
+/* GRID CONTAINER */
+.our-works-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 40px;
+  justify-content: center;
+}
+
+/* IMAGE CARD */
+.work-card {
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* OFFSET EFFECT FOR STAGGERED LOOK */
+.work-card:nth-child(1),
+.work-card:nth-child(3) {
+  transform: translateY(50px);
+}
+
+.work-card:nth-child(2),
+.work-card:nth-child(4) {
+  transform: translateY(-60px);
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .our-works-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .our-works-grid {
+    grid-template-columns: repeat(2, 250px);
+    gap: 30px;
+  }
+
+  .work-card {
+    height: 280px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 640px) {
+  .our-works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    height: 220px;
+    transform: translateY(0) !important;
+  }
+
+  .our-works-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}

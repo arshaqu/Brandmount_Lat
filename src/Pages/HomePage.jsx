@@ -1,9 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
 import Menu from './Menu';
-import Aboutus from './Aboutus';
 import Wearehere from './Wearehere';
 import Service from './Service';
+import Ourworks from './Ourworks';
+
+import VisionMission from './VisionMission';
 
 function HomePage() {
   const [headerText, setHeaderText] = useState('CONTACT');
@@ -44,7 +46,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Sticky Header */}
-      <header className="flex flex-wrap justify-between items-center px-6 py-4 sticky top-0 bg-gray-50 z-50">
+      <header className="flex flex-wrap justify-between items-center px-6 py-4  top-0 bg-gray-50 z-50">
         <div className="text-5xl md:text-9xl font-semibold poppins text-black">B</div>
         <nav className="flex flex-wrap gap-6 md:gap-12 text-sm font-bold text-black poppinsx mt-4 sm:mt-0">
           <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">HOME</a>
@@ -104,12 +106,19 @@ function HomePage() {
           <Wearehere />
         </section>
 
-        <section id="aboutus">
-          <Aboutus />
-        </section>
+<section id="aboutus" style={{ padding: 0, margin: 0 }}>
+  <VisionMission />
+</section>
+
+
+
 
         <section id="service">
           <Service />
+        </section>
+
+         <section id="ourworks">
+          <Ourworks />
         </section>
       </main>
     </div>
