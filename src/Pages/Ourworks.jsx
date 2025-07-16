@@ -17,6 +17,12 @@ function Ourworks() {
       <div className="our-works-grid">
         {[1, 2, 3, 4].map((_, index) => (
           <div className="work-card" key={index}>
+            <div className="card-content">
+              <h4 className="work-title">Project Title {index + 1}</h4>
+              <p className="work-description">
+                This is a short 10-word project description for display demo.
+              </p>
+            </div>
             <img src={Image} alt={`Work ${index + 1}`} />
           </div>
         ))}

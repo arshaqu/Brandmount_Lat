@@ -6,6 +6,7 @@ import Service from './Service';
 import Ourworks from './Ourworks';
 
 import VisionMission from './VisionMission';
+import Footer from './Footer';
 
 function HomePage() {
   const [headerText, setHeaderText] = useState('CONTACT');
@@ -120,6 +121,11 @@ function HomePage() {
          <section id="ourworks">
           <Ourworks />
         </section>
+
+             <section id="ourworks">
+          <Footer />
+        </section>
+
       </main>
     </div>
   );
