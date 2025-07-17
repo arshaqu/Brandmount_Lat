@@ -8,10 +8,13 @@ import Ourworks from './Ourworks';
 import VisionMission from './VisionMission';
 import Footer from './Footer';
 
+import BLogos from '../Assets/BrandBLogo.png'
+
 function HomePage() {
   const [headerText, setHeaderText] = useState('CONTACT');
 
   const sectionIds = ['contact', 'menu', 'wearehere', 'aboutus' , 'service'];
+   const [menuOpen, setMenuOpen] = useState(false);
 
   const idToHeaderText = {
     contact: 'CONTACT',
@@ -21,45 +24,71 @@ function HomePage() {
     service : 'SERVICE'
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            setHeaderText(idToHeaderText[id] || 'CONTACT');
-          }
-        });
-      },
-      {
-        threshold: 0.4,
-      }
-    );
 
-    sectionIds.forEach((id) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Sticky Header */}
-      <header className="flex flex-wrap justify-between items-center px-6 py-4  top-0 bg-gray-50 z-50">
-        <div className="text-5xl md:text-9xl font-semibold poppins text-black">B</div>
-        <nav className="flex flex-wrap gap-6 md:gap-12 text-sm font-bold text-black poppinsx mt-4 sm:mt-0">
-          <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">HOME</a>
-          <a style={{ letterSpacing: '2px' }} href="#aboutus" className="hover:text-gray-400">ABOUT US</a>
-          <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">SERVICE</a>
-          <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">PROJECTS</a>
-          <a href="#" className="hover:text-gray-400">CONTACT US</a>
-        </nav>
-        <div style={{ letterSpacing: '2px' }} className="text-lg font-semibold text-black mt-4 sm:mt-0">
-          {headerText}
-        </div>
-      </header>
+     <header className="flex flex-wrap items-center justify-between px-6 py-4 bg-gray-50 top-0 z-50 relative">
+      {/* Logo */}
+     <div className="text-5xl md:text-9xl ml-24 font-semibold poppins text-black">
+  <img
+    src = {BLogos} // Replace with your actual image path
+    alt="Logo"
+    className="h-16 md:h-32 w-auto"
+  />
+</div>
+
+      {/* Hamburger Button - visible only on mobile */}
+      <button
+        className="md:hidden text-2xl text-black"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+
+      {/* Navigation Menu */}
+      <nav
+        className={`${
+          menuOpen ? 'flex' : 'hidden'
+        } flex-col md:flex md:flex-row gap-4 md:gap-12 text-sm font-bold text-black poppinsx mt-4 md:mt-0 w-full md:w-auto`}
+      >
+        <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">
+          HOME
+        </a>
+        <a style={{ letterSpacing: '2px' }} href="#aboutus" className="hover:text-gray-400">
+          ABOUT US
+        </a>
+        <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">
+          CAREERS
+        </a>
+        <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">
+          SERVICE
+        </a>
+        <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">
+          PROJECTS
+        </a>
+        <a style={{ letterSpacing: '2px' }} href="#" className="hover:text-gray-400">
+          WORKS
+        </a>
+  
+      </nav>
+
+      {/* Right-side Text */}
+      <div
+        style={{ letterSpacing: '2px' }}
+        className="text-lg font-semibold text-black mt-4 md:mt-0 w-full md:w-auto text-center md:text-right"
+      >
+   <button
+  className="relative z-10 overflow-hidden border border-black px-5 py-3  text-black  duration-200
+             before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
+             hover:before:translate-x-0 hover:text-white"
+>
+  CONTACT US
+</button>
+
+      </div>
+    </header>
 
       {/* Main Content */}
       <main>
@@ -67,33 +96,29 @@ function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
             {/* Left Column */}
             <div className="space-y-12 poppins">
-              <div style={{ letterSpacing: '3px' }} className="md:text-9xl text-5xl font-semibold text-black leading-none poppinsx">the</div>
+              <div style={{ letterSpacing: '3px' }} className="md:text-9xl text-5xl font-semibold text-black leading-none poppins">The</div>
+              <div className="md:text-8xl poppinsx font-light text-black">↓</div>
               <div className="space-y-2 text-4xl poppins text-start">
-                <div className="text-gray-500">Personal branding</div>
-                <div className="text-gray-500">agency</div>
-                <div className="text-gray-500">in kerala</div>
+               <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug ml-48 poppin">
+  Personal branding agency in Kerala
+</div>
+
+              
               </div>
-              <div className="md:text-8xl font-light text-black">↓</div>
             </div>
 
             {/* Middle Column */}
             <div className="space-y-8 poppins md:mt-24">
-              <div className="text-lg md:text-3xl text-gray-400">Brand Strategy</div>
-              <div style={{ letterSpacing: '3px' }} className="md:text-9xl text-5xl poppinsx text-black leading-none">identity</div>
-              <div className="space-y-6">
-                <div className="text-lg md:text-3xl text-gray-400">Brand Innovation</div>
-              </div>
+              <div style={{ letterSpacing: '3px' }} className="md:text-9xl text-5xl poppins text-black leading-none">identity</div>
+             
             </div>
 
             {/* Right Column */}
             <div>
-              <div className="text-lg md:text-3xl poppins text-gray-400">Brand Transfomation</div>
-              <div className="text-lg md:text-3xl poppins md:ml-[-296px] text-gray-400 mt-12">Brand Innovation</div>
-              <div className="text-lg md:text-3xl poppins md:ml-[196px] text-gray-400 mt-12">Brand Design</div>
-
+             
               <div className="poppins md:mt-48">
                 <div className="text-lg md:text-3xl text-gray-400">Brand Transformation</div>
-                <div className="md:text-9xl mt-0 text-7xl poppinsx text-black leading-none">expert</div>
+                <div className="md:text-9xl mt-0 text-7xl poppins text-black leading-none">expert</div>
               </div>
             </div>
           </div>

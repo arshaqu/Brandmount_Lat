@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import VideoAni from '../Assets/Videoanime.mp4';
 
 function Menu({ visible = true }) {
-  const initialWidth = 500;
+  const initialWidth = 650;
   const initialHeight = 250;
 
   const [size, setSize] = useState({ width: initialWidth, height: initialHeight });
@@ -51,10 +51,10 @@ function Menu({ visible = true }) {
 
       const scrollHeight = document.documentElement.scrollHeight - viewportHeight;
       const rawScrollProgress = Math.min(window.scrollY / scrollHeight, 1);
-      const progress = Math.min(Math.pow(rawScrollProgress, 1.2) * 1.2, 1);
+ const progress = Math.min(window.scrollY / (scrollHeight * 0.6), 1);
 
-      const minWidth = 100;
-      const minHeight = 50;
+      const minWidth = 500;
+      const minHeight = 150;
 
       if (window.scrollY < 200) {
         setSize({ width: initialWidth, height: initialHeight });
@@ -158,11 +158,11 @@ function Menu({ visible = true }) {
       {/* Stop Point */}
       <div
         ref={stopPointRef}
-        className="absolute md:mt-[438vh] mt-28 md:ml-[220px] p-12 flex justify-center text-center font-bold poppinsx  text-5xl md:text-8xl"
+        className="absolute md:mt-[438vh] mt-28 md:ml-[220px] p-12 flex justify-center text-center font-bold poppins  text-5xl md:text-8xl"
       >
         <h1
           style={{ letterSpacing: '5px' }}
-          className="  md:mt-[150px] poppins text-gray-400 font-bold hover:text-gray-700"
+          className="  md:mt-[150px] poppins text-gray-400 font-bold hover:text-gray-700 poppins"
         >
           We are{' '}
         <span
@@ -171,7 +171,7 @@ function Menu({ visible = true }) {
     isMobile || showMoreThan ? 'opacity-100' : 'opacity-0'
   } md:min-w-[250px] sm:min-w-[350px] md:min-w-[450px]`}
 >
-  <span className="md:p-4 md:mt-4 md:bg-black hover:bg-white text-gray-400 transition-colors duration-300 font-bold">
+  <span className="md:p-4 md:mt-4 md:bg-black hover:bg-white text-gray-400 transition-colors duration-300 font-bold poppinsx">
     More than<br />
   </span>
 </span>

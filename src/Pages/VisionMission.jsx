@@ -175,25 +175,25 @@ function VisionMission() {
       <div className="vision-scroll-area" ref={scrollRef}>
         <div className="scroll-wrapper">
           <div className="section">
-            <div className="left">Our Vision</div>
-            <div className="right">
+            <div style={{ fontSize:'28px'}} className="left poppinsx">Our Vision</div>
+            <div style={{textAlign:'left' , fontSize:'18px'}} className="right poppin">
               To become the industry leader in setting modern trends and developing brand identities,
               becoming the preferred choice for leaders seeking trendy and impactful branding solutions.
             </div>
           </div>
 
           <div className="section">
-            <div className="left">Our Mission</div>
-            <div className="right">
+            <div style={{ fontSize:'28px'}} className="left poppinsx">Our Mission</div>
+            <div style={{textAlign:'left' , fontSize:'18px'}} className="right poppin">
               We are dedicated to offering comprehensive branding and identity creation services for individuals,
               products, and organizations, empowering them to become trendsetters and industry leaders in their respective fields.
             </div>
           </div>
 
-          <div className="section">
-            <div className="left">Core Values</div>
+          <div  className="section">
+           <div style={{ fontSize:'28px'}} className="left poppinsx">Core Values</div>
             <div className="right">
-              <ul>
+              <ul style={{textAlign:'left' , fontSize:'18px'}} className='poppin'>
                 <li><strong>Creativity:</strong> We bring innovative thinking to every project.</li>
                 <li><strong>Integrity:</strong> We act with honesty and transparency.</li>
                 <li><strong>Excellence:</strong> We strive to exceed expectations.</li>

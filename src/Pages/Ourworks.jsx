@@ -6,10 +6,10 @@ function Ourworks() {
   return (
     <div className="our-works-section">
       <div className="our-works-text">
-        <h3>Our Works</h3>
-        <p>
-          Personal branding is the process of establishing <br />
-          and promoting a unique identity and image for <br />
+        <h3 className='poppinsx' >Our Works</h3>
+        <p className='poppin'>
+          Personal branding is the process of establishing 
+          and promoting a unique identity and image for
           oneself, typically in a professional context.
         </p>
       </div>
@@ -18,8 +18,8 @@ function Ourworks() {
         {[1, 2, 3, 4].map((_, index) => (
           <div className="work-card" key={index}>
             <div className="card-content">
-              <h4 className="work-title">Project Title {index + 1}</h4>
-              <p className="work-description">
+              <h4 className="work-title poppinsx">Project Title {index + 1}</h4>
+              <p className="work-description poppins">
                 This is a short 10-word project description for display demo.
               </p>
             </div>
