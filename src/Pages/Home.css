@@ -61,6 +61,7 @@
   font-size: 20px;
   color: blue;
   text-decoration: underline;
+  margin-left: 100px !important;
 
 }
 
@@ -74,11 +75,25 @@
 /* Grid layout */
 .services-grid {
   display: grid;
+  padding: 0px 250px 0px;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 60px;
   justify-items: center;
   margin-bottom: 60px;
 }
+
+.service-card {
+  /* your existing styles */
+}
+
+
+
+.arrow {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+
 
 @media (max-width: 1024px) {
   .services-grid {
@@ -89,18 +104,21 @@
 @media (max-width: 640px) {
   .services-grid {
     grid-template-columns: 1fr;
+  padding: 0px 0px 0px;
+
   }
 }
 
 
 
 /* Service Card */
+/* Service Card */
 .service-card {
-  border: 1px solid #4d2e24;
+  border: 3px solid #000000;
   background-color: #ffffff;
   width: 300px;
   height: 250px;
-  padding: 30px;
+  padding: 30px; 
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -113,14 +131,39 @@
 
 .service-card:hover {
   box-shadow: 0 0 0 2px #fce6ce;
-  border: 1px solid #f6ebde;
+  border: 3px solid #f6ebde;
   background-color: #f6ebde;
-  
 }
+
+/* Title and arrow container */
+.service-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  font-size: 13px;
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.08s ease-out;
+  white-space: nowrap;
+  mix-blend-mode: difference;
+}
+
 
 .service-text {
   font-weight: 400;
   color: #1c1c1c;
+  text-align: left;
+  font-size: 15px !important;
 }
 
 /* Hover description content */
@@ -159,13 +202,45 @@
   opacity: 0.6;
 }
 
-.arrow {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  font-size: 16px;
-  color: #4d2e24;
+/* Default arrow style */
+/* Optional: if not using Tailwind */
+.arrow-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
 }
+
+.arrow,
+.black-square {
+  position: absolute;
+  top: -80%;
+  left: -50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+  color: #4d2e24;
+  font-size: 30px;
+}
+
+.black-square {
+  background-color: black;
+  width: 150%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.75);
+}
+
+.service-card:hover .arrow {
+  opacity: 0;
+  transform: scale(0.75);
+}
+
+.service-card:hover .black-square {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 /* Clients */
 .clients-title {

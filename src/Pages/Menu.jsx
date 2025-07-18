@@ -45,9 +45,9 @@ function Menu({ visible = true }) {
 
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
-
-      const targetWidth = viewportWidth * 0.7;
-      const targetHeight = viewportHeight * 0.7;
+                                                                                                                                                                                                                                                                                                                                                                                                     
+      const targetWidth = viewportWidth * 1.0;
+      const targetHeight = viewportHeight * 1.0;
 
       const scrollHeight = document.documentElement.scrollHeight - viewportHeight;
       const rawScrollProgress = Math.min(window.scrollY / scrollHeight, 1);
@@ -128,6 +128,7 @@ function Menu({ visible = true }) {
 
   return (
     <div style={{ overflow: 'hidden' }} className="md:min-h-[220vh] cover">
+      
       {/* Video */}
       <div className={isMobile ? "w-full relative z-0" : "fixed inset-0 pointer-events-none z-0"}>
         <video
