@@ -25,7 +25,7 @@ function Footer() {
        
           <div className="footer-links poppins">
             <ul >
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
             </ul>
             <ul style={{textAlign:'left'}}>
               <li><a href="#" >Services</a></li>

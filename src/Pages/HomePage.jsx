@@ -34,12 +34,15 @@ function HomePage() {
       {/* Custom Cursor */}
       {cursorVisible && (
         <div
-          className="custom-cursor"
+        
+          className="custom-cursor poppins"
           style={{
+            fontSize:'15px',
+            letterSpacing:'3px' ,
             transform: `translate3d(${cursorPosition.x + 15}px, ${cursorPosition.y + 15}px, 0)`,
           }}
         >
-          ARSHAQUE
+          SAY HELLO
         </div>
       )}
 
