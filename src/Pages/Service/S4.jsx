@@ -24,7 +24,7 @@ function S4() {
     {
       title: 'Sales Automation & Funnel Development',
       description: 'Optimize your sales journey with automated funnels.',
-      path: '/sales-funnel'
+      path: '/sales-funnelng'
     },
        {
       title: 'Web Development & E-Commerce',
@@ -81,7 +81,7 @@ function S4() {
       <section className="bg-white py-10 px-4 sm:px-6 md:px-12 font-poppins">
         <h2 className="text-4xl text-gray-400 mb-6 sm:mb-8 poppins text-left">Service</h2>
 
-        <div className="bg-[#f8eee3] p-6 sm:p-8 md:p-10 rounded-md grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="bg-[#f8eee3] p-6 sm:p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="text-left">
             <h3 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-3 poppins p-4">
               Personal Branding & Leadership Positioning
@@ -117,19 +117,13 @@ function S4() {
               : 'grid grid-cols-1 sm:grid-cols-2 gap-6'
           }`}
         >
-          <div className={`${isDesktop ? 'inline-flex gap-12' : 'grid w-full gap-6'}`}>
+            <div className={`${isDesktop ? 'inline-flex gap-12' : 'grid w-full gap-6'}`}>
             {(isDesktop ? [...services, ...services] : services).map((service, index) => (
-              <div
-                key={index}
-                onClick={() => handleRedirect(service.path)}
-                style={{
-                  borderRadius: '10px',
-                  borderWidth: '2px',
-                  borderStyle: 'solid',
-                  borderColor: 'black',
-                }}
-                className="group min-w-[300px] min-h-[200px] w-full cursor-pointer bg-white shadow-lg p-6 relative overflow-hidden transition-all duration-300 hover:bg-[#f8eee3] flex flex-col items-center justify-center text-center"
-              >
+             <div
+              key={index}
+              onClick={() => handleRedirect(service.path)}
+              className="group min-w-[300px] min-h-[200px] w-full cursor-pointer bg-white shadow-lg p-6 relative overflow-hidden transition-all duration-300 hover:bg-[#f8eee3] flex flex-col items-center justify-center text-center border-2 border-black hover:border-[#F8EEE3]"
+            >
                 <div className="absolute top-4 right-4 text-gray-300 text-xl font-bold poppins">
                   {String((index % services.length) + 1).padStart(2, '0')}
                 </div>
