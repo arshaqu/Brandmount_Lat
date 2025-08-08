@@ -10,6 +10,7 @@ import S3 from './Pages/Service/S3';
 import S4 from './Pages/Service/S4';
 import S5 from './Pages/Service/S5';
 import S6 from './Pages/Service/S6';
+import Careers from './Pages/Careers';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/personal-branding" element={<S4 />} />
           <Route path="/sales-funnelng" element={<S5 />} />
           <Route path="/media-production" element={<S6 />} />
+          <Route path="/careers" element={<Careers />} />
 
 
 
