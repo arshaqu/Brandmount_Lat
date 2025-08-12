@@ -1,10 +1,11 @@
 import React from "react";
+import './Home.css'
 
 
 function Wearehere() {
 
   return (
-    <div style={{backgroundColor:'#F9FAFB'}} className="px-8 py-16 space-y-24 md:mt-[270vh] mt-[60vh]">
+    <div style={{backgroundColor:'#F9FAFB'}} className="px-8 py-16 space-y-24 md:mt-[270vh] mt-[35vh]">
 
 
 

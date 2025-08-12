@@ -51,43 +51,51 @@ function HomePage() {
 
       {/* Main Content */}
       <main>
-        <section id="menu" className="px-6 sm:px-12 py-6 cursor-none">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
-            {/* Left Column */}
-            <div className="space-y-12 poppins">
-              <div
-                style={{ letterSpacing: '3px' }}
-                className="md:text-9xl text-5xl font-semibold text-black leading-none poppins"
-              >
-                The
-              </div>
-              <div className="md:text-8xl poppinsx font-light text-black">↓</div>
-              <div className="space-y-2 text-4xl poppins text-start">
-                <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug ml-48 poppin">
-                  Personal branding agency in Kerala
-                </div>
-              </div>
-            </div>
-
-            {/* Middle Column */}
-            <div className="space-y-8 poppins md:mt-24">
-              <div
-                style={{ letterSpacing: '3px' }}
-                className="md:text-9xl text-5xl poppins text-black leading-none"
-              >
-                identity
-              </div>
-            </div>
-
-            {/* Right Column */}
-            <div>
-              <div className="poppins md:mt-48">
-                <div className="text-lg md:text-3xl text-gray-400">Brand Transformation</div>
-                <div className="md:text-9xl mt-0 text-7xl poppins text-black leading-none">expert</div>
-              </div>
-            </div>
+        <a
+  href="https://wa.me/8282822836"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <section id="menu" className="px-6 sm:px-12 py-6 cursor-none">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
+      {/* Left Column */}
+      <div className="space-y-12 poppins">
+        <div
+          style={{ letterSpacing: '3px' }}
+          className="md:text-9xl text-7xl font-semibold text-black leading-none poppins"
+        >
+          The
+        </div>
+        <div className="md:text-8xl text-7xl poppinsx font-light text-black">↓</div>
+        <div className="space-y-2 text-4xl poppins text-start">
+          <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug md:ml-48 ml-32 poppin">
+            Personal branding agency in Kerala
           </div>
-        </section>
+        </div>
+      </div>
+
+      {/* Middle Column */}
+      <div className="space-y-8 poppins md:mt-24">
+        <div
+          style={{ letterSpacing: '3px' }}
+          className="md:text-9xl text-7xl poppins text-black leading-none"
+        >
+          identity
+        </div>
+      </div>
+
+      {/* Right Column */}
+      <div>
+        <div className="poppins md:mt-48">
+          <div className="text-lg md:text-3xl text-gray-400">Brand Transformation</div>
+          <div className="md:text-9xl mt-0 text-7xl poppins text-black leading-none">expert</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</a>
+
 
         <section id="menu-component">
           <Menu />

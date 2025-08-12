@@ -159,7 +159,7 @@ function Menu({ visible = true }) {
       {/* Stop Point */}
       <div
         ref={stopPointRef}
-        className="absolute md:mt-[438vh] mt-28 md:ml-[220px] p-12 flex justify-center text-center font-bold poppins  text-5xl md:text-8xl"
+        className="absolute md:mt-[428vh] mt-28 md:ml-[220px] p-12 flex justify-center text-center font-bold poppins  text-5xl md:text-8xl"
       >
         <h1
           style={{ letterSpacing: '5px' }}

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css'; // Make sure this file includes the updated styles below
 import Image from './../Assets/Explore.png';
-import Image1 from './../Assets/ourWorks1.jpg'
+import Image1 from './../Assets/dr.jpg'
 import Image2 from './../Assets/ourWorks2.jpg'
 import Image3 from './../Assets/ourWorks3.jpg'
 import Image4 from './../Assets/ourWorks4.jpg'
