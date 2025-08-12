@@ -52,7 +52,7 @@ function HomePage() {
       {/* Main Content */}
       <main>
         <a
-  href="https://wa.me/8282822836"
+  // href="https://wa.me/8282822836"
   target="_blank"
   rel="noopener noreferrer"
   className="block"
@@ -63,13 +63,13 @@ function HomePage() {
       <div className="space-y-12 poppins">
         <div
           style={{ letterSpacing: '3px' }}
-          className="md:text-9xl text-7xl font-semibold text-black leading-none poppins"
+          className="md:text-9xl text-8xl font-semibold text-black leading-none poppins"
         >
           The
         </div>
-        <div className="md:text-8xl text-7xl poppinsx font-light text-black">↓</div>
+        <div className="md:text-8xl text-6xl poppinsx font-light text-black">↓</div>
         <div className="space-y-2 text-4xl poppins text-start">
-          <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug md:ml-48 ml-32 poppin">
+          <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug text-2xl md:ml-60 ml-24 poppin">
             Personal branding agency in Kerala
           </div>
         </div>
@@ -79,7 +79,7 @@ function HomePage() {
       <div className="space-y-8 poppins md:mt-24">
         <div
           style={{ letterSpacing: '3px' }}
-          className="md:text-9xl text-7xl poppins text-black leading-none"
+          className="md:text-9xl text-8xl poppins text-black leading-none"
         >
           identity
         </div>
@@ -89,7 +89,7 @@ function HomePage() {
       <div>
         <div className="poppins md:mt-48">
           <div className="text-lg md:text-3xl text-gray-400">Brand Transformation</div>
-          <div className="md:text-9xl mt-0 text-7xl poppins text-black leading-none">expert</div>
+          <div className="md:text-9xl mt-0 text-8xl poppins text-black leading-none">expert</div>
         </div>
       </div>
     </div>

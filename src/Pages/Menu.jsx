@@ -130,7 +130,7 @@ function Menu({ visible = true }) {
     <div style={{ overflow: 'hidden' }} className="md:min-h-[220vh] cover">
       
       {/* Video */}
-      <div className={isMobile ? "w-full relative z-0" : "fixed inset-0 pointer-events-none z-0"}>
+      <div className={isMobile ? "w-full relative z-0 mt-20" : "fixed inset-0 pointer-events-none z-0"}>
         <video
           ref={videoRef}
           src={VideoAni}
@@ -163,7 +163,7 @@ function Menu({ visible = true }) {
       >
         <h1
           style={{ letterSpacing: '5px' }}
-          className="  md:mt-[150px] poppins text-gray-400 font-bold hover:text-gray-700 poppins"
+          className="  md:mt-[150px]  poppins text-gray-400 font-bold hover:text-gray-700 poppins"
         >
           We are{' '}
         <span
@@ -172,12 +172,12 @@ function Menu({ visible = true }) {
     isMobile || showMoreThan ? 'opacity-100' : 'opacity-0'
   } md:min-w-[250px] sm:min-w-[350px] md:min-w-[450px]`}
 >
-  <span className="md:p-4 md:mt-4 md:bg-black hover:bg-white text-gray-400 transition-colors duration-300 font-bold poppinsx">
+  <span className="md:p-4 md:mt-4 md:bg-black hover:bg-white text-gray-400 transition-colors duration-300 md:font-bold md:poppinsx">
     More than<br />
   </span>
 </span>
 
-          <span className="block md:p-4 md:mt-4  ">Digital Agency</span>
+          <span className="block md:p-4 md:mt-4 mt-4  ">Digital Agency</span>
         </h1>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
       </div>
     </div>
