@@ -69,9 +69,10 @@ function HomePage() {
         </div>
         <div className="md:text-8xl text-6xl poppinsx font-light text-black">↓</div>
         <div className="space-y-2 text-4xl poppins text-start">
-          <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug text-2xl md:ml-60 ml-24 poppin">
-            Personal branding agency in Kerala
-          </div>
+        <div className="text-gray-500 max-w-[170px] break-words whitespace-normal leading-snug text-xl md:ml-60 ml-24 md:text-left text-center poppin">
+  Personal branding agency in Kerala
+</div>
+
         </div>
       </div>
 
