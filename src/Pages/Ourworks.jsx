@@ -43,16 +43,20 @@ function Ourworks() {
       </div>
 
       <div className="our-works-grid">  
-        {worksData.map((work, index) => (
-          <div style={{height:'auto'}} className="work-card" key={index}>
-            <img  src={work.image} alt={work.title} />
-            <div className="card-content">
-              <h4  className="work-title poppinsx">{work.title}</h4>
-              <p className="work-description poppins">{work.description}</p>
-            </div>
-          </div>
-        ))}
+  {worksData.map((work, index) => (
+    <div style={{ height: 'auto' }} className="work-card" key={index}>
+      <div className="image-wrapper">
+        <img src={work.image} alt={work.title} />
+        <div className="overlay"></div> {/* Black overlay */}
       </div>
+      <div className="card-content">
+        <h4 className="work-title poppinsx">{work.title}</h4>
+        <p className="work-description poppins">{work.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }

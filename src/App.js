@@ -11,11 +11,14 @@ import S4 from './Pages/Service/S4';
 import S5 from './Pages/Service/S5';
 import S6 from './Pages/Service/S6';
 import Careers from './Pages/Careers';
+import ScrollToTop from './Pages/ScrollToTop';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop /> {/* ✅ Works globally */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contactus />} />
@@ -27,11 +30,6 @@ function App() {
           <Route path="/sales-funnelng" element={<S5 />} />
           <Route path="/media-production" element={<S6 />} />
           <Route path="/careers" element={<Careers />} />
-
-
-
-
-
         </Routes>
       </div>
     </Router>

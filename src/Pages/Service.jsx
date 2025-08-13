@@ -61,7 +61,7 @@ function ServicesPage() {
 
   return (
     <section className="services-section">
-      <h2 style={{ justifyItems: 'start' }} className="section-title poppins">Our Services</h2>
+      <h2 style={{ justifyItems: 'start' }} className="section-title poppins text-4xl ">Our Services</h2>
       <p className="section-subtext poppins">
         Let Brandmount be your partner in crafting a
         unique brand identity that sets you apart.
@@ -97,7 +97,7 @@ function ServicesPage() {
       </div>
 
       {/* ✅ Our Clients Section with Images */}
-      <h2 className="section-title clients-title">Our Clients</h2>
+      <h2 className="section-title clients-title text-4xl ">Our Clients</h2>
       <p className='section-subtext poppins'>We collaborate with forward-thinking brands to craft bold, impactful identities that inspire and connect.
 
 </p>

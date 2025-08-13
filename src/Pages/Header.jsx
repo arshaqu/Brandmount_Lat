@@ -21,7 +21,7 @@ function Header() {
   return (
    <header className="flex flex-wrap items-center justify-between px-6 py-4 bg-gray-50 top-0 z-50 relative">
   {/* Logo */}
-  <div className="text-5xl md:text-9xl ml-24 font-semibold poppins text-black">
+  <div className="text-5xl md:text-9xl md:ml-24 font-semibold poppins text-black">
   <a href="/">
      <img
       src={BLogos}
@@ -65,13 +65,12 @@ function Header() {
 
     {/* CONTACT US Button for mobile only */}
     <div className="block md:hidden">
-      <button
-        className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                   before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
-                   before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white"
+      <a
+      href="/contact"
+        className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200"
       >
         CONTACT US
-      </button>
+      </a>
     </div>
   </nav>
 
