@@ -142,6 +142,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+
   .section {
     flex-direction: column;
     justify-content: center;
@@ -173,5 +175,11 @@
   .right {
     font-size: 0.8rem;
     line-height: 1.6;
+  }
+}
+
+  @media (max-width: 768px) {
+  .vision-container {
+    overflow: visible; /* Allow horizontal scroll on mobile */
   }
 }

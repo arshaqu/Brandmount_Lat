@@ -127,13 +127,10 @@ function VisionMission() {
     };
   }, [isActive, isAtStart, isAtEnd]);
 
-  // Mobile: Use native swipe (no forced scroll)
+  // Mobile: No forced scroll, let native swipe work
   useEffect(() => {
-    if (!isActive || window.innerWidth > 768) return; // Only mobile
-
-    // We don't preventDefault or change scroll position here — native swipe will handle it
-    // Just keep listeners clean
-    return () => {};
+    if (!isActive || window.innerWidth > 768) return;
+    // No JS needed for manual swipe
   }, [isActive]);
 
   return (
