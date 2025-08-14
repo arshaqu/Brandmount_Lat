@@ -96,13 +96,18 @@ function S4() {
             <p>
              Your story deserves the spotlight. We help you unlock and express your unique brilliance — building personal brands that radiate authenticity, credibility, and purpose. Let the world see you, know you, and trust you — as the leader you are meant to be.
             </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+   <button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
           </div>
         </div>
       </section>

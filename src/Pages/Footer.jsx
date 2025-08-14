@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -25,30 +26,30 @@ function Footer() {
        
           <div className="footer-links poppins">
             <ul >
-              <li><a href="/">Home</a></li>
+              <li><a className='alignment ' href="/">Home</a></li>
             </ul>
-            <ul style={{textAlign:'left'}}>
-              <li><a href="#" >Services</a></li>
+            <ul className='footer-links-sub ' style={{textAlign:'left'}}>
+              <li><a href="//brand-strategy" >Services</a></li>
               <li><a href="#">Partnership</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="/aboutus">About us</a></li>
             </ul>
             <ul>
-              <li><a href="#">Contacts</a></li>
+              <li><a className='alignment2' href="#">Contacts</a></li>
             </ul>
           </div>
         <div className="footer-middle poppins">
           <div className="footer-help">
             <p style={{textAlign:'left'}}>Didn't find what you're looking for or have questions?<br />We're here to help — reach out anytime!</p>
-            <div className="footer-form">
-              <input type="email" placeholder="Email" />
-              <button type="button">contact Us</button>
+            <div className="footer-form" >
+              <button type="button">Email</button>
+              <button  type="button"><a href="/contact">Contact us</a></button>
             </div>
           </div>
 
-          <div className="footer-contact poppins">
+          <div className="footer-contact poppins text-left">
             <p className="contact-title">CONTACT US</p>
-            <p className="contact-phone">+1 891 989–11–91</p>
-            <p className="contact-email">hello@logolipsum.com</p>
+            <p className="contact-phone">+91 82828228361</p>
+            <p className="contact-email">Info@brandmount.in</p>
           </div>
 
           <div className="footer-address poppins">

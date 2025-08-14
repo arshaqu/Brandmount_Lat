@@ -96,13 +96,18 @@ function S6() {
           <div className="text-left text-gray-700 text-base leading-relaxed md:leading-loose space-y-6 max-w-prose poppin">
             <p>
 Visuals that captivate. Stories that stay. We produce stunning, high-quality content — from cinematic videos to compelling brand stories — that stir the senses, engage the soul, and bring your brand’s vision to vivid life.            </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+<button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
           </div>
         </div>
       </section>

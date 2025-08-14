@@ -95,13 +95,18 @@ function S3() {
             <p>
               Your website is your digital stage — we make it perform. Whether you need an elegant showcase or a high-converting e-commerce platform, we craft seamless, beautiful, and functional web experiences that don’t just attract — they captivate and convert.
             </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+         <button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
           </div>
         </div>
       </section>

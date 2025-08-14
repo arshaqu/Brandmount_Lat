@@ -8,7 +8,7 @@ function Contactus() {
       <Header/>
     <div className="min-h-auto px-4 md:px-12 py-12 bg-white text-black">
       {/* Section Heading */}
-      <h2 style={{fontWeight:'bold'}} className="text-2xl text-blue-700 mb-8 text-center md:text-left poppin ">Contact Us</h2>
+      <h2 style={{fontWeight:'bold'}} className="text-2xl text-gray-400 mb-8 text-center md:text-left poppin ">Contact Us</h2>
 
       {/* Grid Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -40,7 +40,7 @@ function Contactus() {
 
     <button
       type="submit"
-      className="bg-white text-blue-700 border border-blue-700 px-6 py-3 font-semibold hover:bg-blue-700  hover:text-white transition"
+      className="bg-white text-gray-700 border border-gray-700 px-6 py-3 font-semibold hover:bg-gray-700  hover:text-white transition"
     >
       SUBMIT NOW
     </button>

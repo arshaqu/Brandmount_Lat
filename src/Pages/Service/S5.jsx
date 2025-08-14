@@ -96,13 +96,18 @@ function S5() {
             <p>
              We build smart, automated sales systems that work for you — even when you’re not looking. From lead generation to customer conversion, we create smooth, scalable funnels that turn interest into action and prospects into loyal fans.
             </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+       <button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
           </div>
         </div>
       </section>

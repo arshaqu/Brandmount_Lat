@@ -95,13 +95,18 @@ function S2() {
             <p>
               We don’t just market — we spark conversations, ignite emotions, and build movements. Through powerful digital strategies, social storytelling, and smart PR, we place your brand exactly where it belongs — in the hearts and minds of your audience, lighting up every scroll, click, and conversation.
             </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+        <button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
           </div>
         </div>
       </section>
