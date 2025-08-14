@@ -42,7 +42,13 @@ function Footer() {
             <p style={{textAlign:'left'}}>Didn't find what you're looking for or have questions?<br />We're here to help — reach out anytime!</p>
             <div className="footer-form" >
               <button type="button">Email</button>
-              <button  type="button"><a href="/contact">Contact us</a></button>
+              <button
+  type="button"
+  onClick={() => (window.location.href = "/contact")}
+>
+  Contact Us
+</button>
+
             </div>
           </div>
 
