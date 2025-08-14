@@ -29,7 +29,7 @@ function Footer() {
               <li><a className='alignment ' href="/">Home</a></li>
             </ul>
             <ul className='footer-links-sub ' style={{textAlign:'left'}}>
-              <li><a href="//brand-strategy" >Services</a></li>
+              <li><a href="/brand-strategy" >Services</a></li>
               <li><a href="#">Partnership</a></li>
               <li><a href="/aboutus">About us</a></li>
             </ul>
