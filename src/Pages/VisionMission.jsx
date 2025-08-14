@@ -8,7 +8,7 @@ function VisionMission() {
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
 
-  // 🟢 Ensure it always starts from the first section (Our Vision)
+  // Ensure it always starts from the first section
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollLeft = 0;
@@ -75,8 +75,10 @@ function VisionMission() {
     };
   }, []);
 
-  // Lock vertical scroll and enable horizontal scrolling with wheel
+  // Desktop only: Lock vertical scroll & enable horizontal scroll on wheel
   useEffect(() => {
+    if (window.innerWidth <= 768) return; // Skip for mobile
+
     const lockScroll = () => {
       document.body.style.overflow = 'hidden';
     };
@@ -113,7 +115,7 @@ function VisionMission() {
           behavior: 'smooth',
         });
       } else {
-        unlockScroll(); // allow vertical scroll if at ends
+        unlockScroll();
       }
     };
 
@@ -125,49 +127,13 @@ function VisionMission() {
     };
   }, [isActive, isAtStart, isAtEnd]);
 
-  // Touch swipe support for mobile
+  // Mobile: Use native swipe (no forced scroll)
   useEffect(() => {
-    if (!isActive) return;
+    if (!isActive || window.innerWidth > 768) return; // Only mobile
 
-    let startX = 0;
-    let startY = 0;
-    let isScrolling = false;
-
-    const handleTouchStart = (e) => {
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      isScrolling = false;
-    };
-
-    const handleTouchMove = (e) => {
-      if (!scrollRef.current) return;
-
-      const deltaX = startX - e.touches[0].clientX;
-      const deltaY = startY - e.touches[0].clientY;
-
-      if (!isScrolling && Math.abs(deltaX) > Math.abs(deltaY)) {
-        isScrolling = true;
-      }
-
-      if (isScrolling) {
-        e.preventDefault();
-        scrollRef.current.scrollLeft += deltaX * 0.8;
-        startX = e.touches[0].clientX;
-      }
-    };
-
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('touchstart', handleTouchStart, { passive: false });
-      container.addEventListener('touchmove', handleTouchMove, { passive: false });
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener('touchstart', handleTouchStart);
-        container.removeEventListener('touchmove', handleTouchMove);
-      }
-    };
+    // We don't preventDefault or change scroll position here — native swipe will handle it
+    // Just keep listeners clean
+    return () => {};
   }, [isActive]);
 
   return (
@@ -175,25 +141,25 @@ function VisionMission() {
       <div className="vision-scroll-area" ref={scrollRef}>
         <div className="scroll-wrapper">
           <div className="section">
-            <div style={{ fontSize:'28px'}} className="left poppinsx">Our Vision</div>
-            <div style={{textAlign:'left' , fontSize:'18px'}} className="right poppin">
+            <div style={{ fontSize: '28px' }} className="left poppinsx">Our Vision</div>
+            <div style={{ textAlign: 'left', fontSize: '18px' }} className="right poppin">
               To become the industry leader in setting modern trends and developing brand identities,
               becoming the preferred choice for leaders seeking trendy and impactful branding solutions.
             </div>
           </div>
 
           <div className="section">
-            <div style={{ fontSize:'28px'}} className="left poppinsx">Our Mission</div>
-            <div style={{textAlign:'left' , fontSize:'18px'}} className="right poppin">
+            <div style={{ fontSize: '28px' }} className="left poppinsx">Our Mission</div>
+            <div style={{ textAlign: 'left', fontSize: '18px' }} className="right poppin">
               We are dedicated to offering comprehensive branding and identity creation services for individuals,
               products, and organizations, empowering them to become trendsetters and industry leaders in their respective fields.
             </div>
           </div>
 
-          <div  className="section">
-           <div style={{ fontSize:'28px'}} className="left poppinsx">Core Values</div>
+          <div className="section">
+            <div style={{ fontSize: '28px' }} className="left poppinsx">Core Values</div>
             <div className="right">
-              <ul style={{textAlign:'left' , fontSize:'18px'}} className='poppin'>
+              <ul style={{ textAlign: 'left', fontSize: '18px' }} className='poppin'>
                 <li><strong>Creativity:</strong> We bring innovative thinking to every project.</li>
                 <li><strong>Integrity:</strong> We act with honesty and transparency.</li>
                 <li><strong>Excellence:</strong> We strive to exceed expectations.</li>
