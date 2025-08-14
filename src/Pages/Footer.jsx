@@ -41,13 +41,22 @@ function Footer() {
           <div className="footer-help">
             <p style={{textAlign:'left'}}>Didn't find what you're looking for or have questions?<br />We're here to help — reach out anytime!</p>
             <div className="footer-form" >
-              <button type="button">Email</button>
-              <button
+
+      <button
   type="button"
-  onClick={() => (window.location.href = "/contact")}
+  onClick={() => window.location.href = 'mailto:Info@brandmount.in'}
 >
-  Contact Us
+  Email
 </button>
+
+
+
+              <button
+            type="button"
+            onClick={() => (window.location.href = "/contact")}
+          >
+            Contact Us
+          </button>
 
             </div>
           </div>
@@ -66,19 +75,19 @@ function Footer() {
         <div className="foot">
            <div style={{alignItems:'end'}}>
         <div
-  className="social poppins"
-  style={{
-    textAlign: 'left',       // Align text inside to the right
-    width: 'fit-content',     // Shrink to content width
-    margin: '0 auto'          // Center the div horizontally
-  }}
->
-  <p className="social-title ">FOLLOW US</p>
-  <p style={{          color: '#454545'
-}} className="social-links">
-    Telegram&nbsp;&nbsp;/ &nbsp;&nbsp;Whatsapp&nbsp;&nbsp;/&nbsp;&nbsp;Instagram
-  </p>
-</div>
+        className="social poppins"
+        style={{
+          textAlign: 'left',       // Align text inside to the right
+          width: 'fit-content',     // Shrink to content width
+          margin: '0 auto'          // Center the div horizontally
+        }}
+        >
+          <p className="social-title ">FOLLOW US</p>
+          <p style={{          color: '#454545'
+        }} className="social-links">
+            Telegram&nbsp;&nbsp;/ &nbsp;&nbsp;Whatsapp&nbsp;&nbsp;/&nbsp;&nbsp;Instagram
+          </p>
+        </div>
 
           </div>
           <div
