@@ -91,13 +91,19 @@ function S1() {
             <p>
               At Brandmount, we breathe life into your brand’s core. We shape stories, craft timeless identities, and build the legal and visual foundations that make your brand unforgettable. From defining your purpose to designing your signature, we create brands that speak, resonate, and inspire trust across generations.
             </p>
-            <button
-              className="relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
-                before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%] before:transition-transform before:duration-300
-                hover:before:translate-x-0 hover:text-white"
-            >
-              ENQUIRE NOW
-            </button>
+   <button
+  onClick={() => navigate('/contact')}
+  className={`relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+    ${isDesktop ? `
+      before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+      before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white
+    ` : ''}
+  `}
+>
+  ENQUIRE NOW
+</button>
+
+            
           </div>
         </div>
       </section>
