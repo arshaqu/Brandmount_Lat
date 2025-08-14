@@ -74,20 +74,50 @@ function Footer() {
 
         <div className="foot">
            <div style={{alignItems:'end'}}>
-        <div
-        className="social poppins"
-        style={{
-          textAlign: 'left',       // Align text inside to the right
-          width: 'fit-content',     // Shrink to content width
-          margin: '0 auto'          // Center the div horizontally
-        }}
-        >
-          <p className="social-title ">FOLLOW US</p>
-          <p style={{          color: '#454545'
-        }} className="social-links">
-            Telegram&nbsp;&nbsp;/ &nbsp;&nbsp;Whatsapp&nbsp;&nbsp;/&nbsp;&nbsp;Instagram
-          </p>
-        </div>
+    <div
+  className="social poppins"
+  style={{
+    textAlign: 'left',       // Keep text aligned left
+    width: 'fit-content',    // Shrink to content width
+    margin: '0 auto'         // Center the div horizontally
+  }}
+>
+  <p className="social-title">FOLLOW US</p>
+  <p
+    style={{
+      color: '#454545'
+    }}
+    className="social-links"
+  >
+    <a 
+      href="https://www.linkedin.com/company/brandmount/posts/?feedView=all" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{ color: '#454545', textDecoration: 'none' }}
+    >
+      Linkedin
+    </a>
+    &nbsp;&nbsp;/&nbsp;&nbsp;
+    <a 
+      href="https://wa.me/8282822836" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{ color: '#454545', textDecoration: 'none' }}
+    >
+      Whatsapp
+    </a>
+    &nbsp;&nbsp;/&nbsp;&nbsp;
+    <a 
+      href="https://www.instagram.com/brandmount_official/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{ color: '#454545', textDecoration: 'none' }}
+    >
+      Instagram
+    </a>
+  </p>
+</div>
+
 
           </div>
           <div

@@ -52,7 +52,7 @@ function HomePage() {
       {/* Main Content */}
       <main>
         <a
-  // href="https://wa.me/8282822836"
+  href="https://wa.me/8282822836"
   target="_blank"
   rel="noopener noreferrer"
   className="block"

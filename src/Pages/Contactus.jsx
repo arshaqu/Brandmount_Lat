@@ -55,7 +55,7 @@ function Contactus() {
           <div className="text-sm space-y-3">
             <p>
               <strong>Email</strong><br />
-              <a href="mailto:info@brandconcur.in" className="text-gray-700 hover:text-blue-700">info@brandconcur.in</a>
+              <a href="mailto:Info@brandmount.in" className="text-gray-700 hover:text-blue-700">Info@brandmount.in</a>
             </p>
             <p>
               <strong>Address</strong><br />
