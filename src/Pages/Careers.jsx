@@ -29,25 +29,36 @@ function Careers() {
 <div>
         <Header/>
         <div className="careers-container ">
-      <h1 style={{color:'black'}} className="careers-title">Careers at Our Studio</h1>
+      <h1 style={{color:'black'}} className="careers-title poppin">Careers at Our Studio</h1>
 
       <div className="jobs-grid">
         {jobOpenings.map((job, index) => (
           <div key={index} className="job-card">
-            <div className="job-header">
-              <h2 className="job-title">{job.title}</h2>
-              <span className="job-type">{job.type}</span>
+            <div className="job-header poppin">
+              <h2  className="job-title poppin">{job.title}</h2>
+              <span  className="job-type poppin">{job.type}</span>
             </div>
-            <p className="job-location">{job.location}</p>
-            <p className="job-description">{job.description}</p>
-            <button className="apply-btn">Apply Now</button>
+            <p  className="job-location poppinsx">{job.location}</p>
+            <p style={{letterSpacing:'2px'}} className="job-description poppins">{job.description}</p>
+              {/* CONTACT US Button for desktop only */}
+<a
+  href="/contact"
+  style={{ letterSpacing: '2px'  }}
+  className="hidden md:block text-lg font-semibold text-black mt-4  text-center md:text-center 
+             relative z-10 overflow-hidden border border-black px-5 py-3 text-black duration-200
+             before:absolute before:inset-0 before:z-[-1] before:bg-black before:translate-x-[-100%]
+             before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-white"
+>
+  SUMBIT
+</a>
+
           </div>
         ))}
       </div>
 
-      <p className="footer-note">
+      <p className="footer-note poppins">
         Can't find a role? Reach out to us at{' '}
-        <span style={{color:'black'}} className="highlight-email">info@brandconcur.in</span>
+        <span style={{color:'black'}} className="highlight-email poppins">Info@brandmount.in</span>
       </p>
     </div>
       <Footer/>

@@ -14,7 +14,7 @@ function Aboutus() {
     {/* Left Column */}
     <div className="text-left">
     <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-3 poppins p-4">
-  BrandMount The Identity Expert Pvt Ltd
+  Brandmount The Identity Expert Pvt Ltd
 </h3>
 
       <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 poppin ">

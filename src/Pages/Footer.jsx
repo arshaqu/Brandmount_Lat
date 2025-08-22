@@ -30,11 +30,11 @@ function Footer() {
             </ul>
             <ul className='footer-links-sub ' style={{textAlign:'left'}}>
               <li><a href="/brand-strategy" >Services</a></li>
-              <li><a href="#">Partnership</a></li>
+              <li><a href="/careers">Careers</a></li>
               <li><a href="/aboutus">About us</a></li>
             </ul>
             <ul>
-              <li><a className='alignment2' href="#">Contacts</a></li>
+              <li><a className='alignment2' href="/contact">Contacts</a></li>
             </ul>
           </div>
         <div className="footer-middle poppins">

@@ -109,7 +109,7 @@ function S1() {
       </section>
 
       {/* Responsive or Auto-Scrolling Services Section */}
-      <section className="py-10 px-4 p-5">
+      <section className="py-10 px-4 p-12">
         <div
           ref={scrollRef}
           className={`${
@@ -118,7 +118,7 @@ function S1() {
               : 'grid grid-cols-1 sm:grid-cols-2 gap-6'
           }`}
         >
-          <div className={`${isDesktop ? 'inline-flex gap-12' : 'grid w-full gap-6'}`}>
+          <div  className={`${isDesktop ? 'inline-flex gap-12' : 'grid w-full gap-6'}`}>
             {(isDesktop ? [...services, ...services] : services).map((service, index) => (
              <div
               key={index}
@@ -127,14 +127,18 @@ function S1() {
             >
 
                 {/* Number in Top Right */}
-                <div className="absolute top-4 right-4 text-gray-300 text-xl font-bold poppins">
+                <div 
+                 className="absolute top-4 right-4 text-gray-300 text-xl font-bold poppins">
                   {String((index % services.length) + 1).padStart(2, '0')}
                 </div>
 
                 {/* Title and Arrow */}
-                <div className="flex items-center gap-2 mb-4 justify-center">
-                  <div className="relative w-[24px] h-[24px]">
-                    <MdOutlineArrowOutward className="absolute top-0 left-0 text-gray-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                <div 
+                 className="flex items-center md:p-[45px] gap-2 mb-4 justify-center">
+                  <div 
+            
+                   className="relative w-[24px] h-[24px]">
+                    <MdOutlineArrowOutward  className="absolute top-0 left-0 text-gray-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 rounded-sm"></div>
                   </div>
                   <h4 className="text-lg font-semibold text-black poppins ml-4 ">

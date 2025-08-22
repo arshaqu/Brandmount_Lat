@@ -132,7 +132,7 @@ function S2() {
                   {String((index % services.length) + 1).padStart(2, '0')}
                 </div>
 
-                <div className="flex items-center gap-2 mb-4 justify-center">
+                <div className="flex items-center md:p-[45px] gap-2 mb-4 justify-center">
                   <div className="relative w-[24px] h-[24px]">
                     <MdOutlineArrowOutward className="absolute top-0 left-0 text-gray-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 rounded-sm"></div>

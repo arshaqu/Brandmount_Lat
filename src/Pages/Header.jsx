@@ -45,7 +45,7 @@ function Header() {
       menuOpen ? 'flex' : 'hidden'
     } flex-col md:flex md:flex-row gap-4 md:gap-12 text-sm font-bold text-black poppinsx mt-4 md:mt-0 w-full md:w-auto`}
   >
-    <a style={{ letterSpacing: '2px' }} href="/" className="hover:text-gray-400">
+    <a style={{ letterSpacing: '2px' }} href="/" className={`hover:text-gray-400 ${location.pathname === '/' ? 'text-gray-400' : ''}`}>
       HOME
     </a>
     <a
@@ -55,10 +55,11 @@ function Header() {
     >
       ABOUT US
     </a>
-    <a style={{ letterSpacing: '2px' }} href="/brand-strategy" className="hover:text-gray-400">
+    <a style={{ letterSpacing: '2px' }} href="/brand-strategy" className={`hover:text-gray-400 ${location.pathname === '/brand-strategy' ? 'text-gray-400' : ''}`}
+    >
       SERVICE
     </a>
-    <a style={{ letterSpacing: '2px' }} href="/careers" className="hover:text-gray-400">
+    <a style={{ letterSpacing: '2px' }} href="/careers" className={`hover:text-gray-400 ${location.pathname === '/careers' ? 'text-gray-400' : ''}`}>
       CAREERS
     </a>
 

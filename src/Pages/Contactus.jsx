@@ -50,7 +50,7 @@ function Contactus() {
 
 
         {/* Contact Info and Map */}
-        <div className='text-left poppin'>
+        <div className='text-left poppins'>
           <h1 className="font-semibold mb-4">Our Location</h1>
           <div className="text-sm space-y-3">
             <p>
@@ -64,7 +64,7 @@ function Contactus() {
             </p>
             <p>
               <strong>Phone</strong><br />
-              <a href="tel:8129732160" className="text-gray-700 hover:text-blue-700">8129732160</a>
+              <a href="tel:8129732160" className="text-gray-700 hover:text-blue-700">+91 82828228361</a>
             </p>
           </div>
 
