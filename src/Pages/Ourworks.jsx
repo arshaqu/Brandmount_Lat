@@ -19,13 +19,13 @@ const worksData = [
     image: Image2,
   },
   {
-    title: 'Impactful Digital Campaign',
-    description: 'Launched a targeted campaign to boost brand visibility and engagement.',
+    title: 'Crafting Brand Stories',
+    description: 'Discover the visual and strategic work behind our client brands.',
     image: Image3,
   },
   {
-    title: 'Social Media Campaign',
-    description: 'Executed a successful digital marketing campaign.',
+    title: 'The Art of Branding',
+    description: 'Highlighting how we shape and define brand identities across industries.',
     image: Image4,
   },
 ];

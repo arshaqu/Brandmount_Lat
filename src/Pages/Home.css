@@ -420,7 +420,7 @@
   transform: scale(1.2) translateY(10px);
     padding: 8px 12px;        /* spacing inside */
   border-radius: 6px;       /* rounded corners */
-  background: rgba(131, 131, 131, 0.85); /* black box with slight transparency */
+  background: rgba(106, 106, 106, 0.85); /* black box with slight transparency */
   color: #fff;              /* white text */
   display: inline-block;    /* makes it fit text content */
   transition: all 0.3s ease;
